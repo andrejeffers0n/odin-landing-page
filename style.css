@@ -1,17 +1,24 @@
-/*
-Colors: 
-#1F2937
-#F9FAF8
-#E5E7EB
-#3882F6
-*/
-
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+html {
+  font-size: 100%;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Header Section */
 .header {
   background-color: #1f2937;
   color: white;
@@ -21,28 +28,32 @@ Colors:
   font-size: 24px;
 }
 
-.hero-container {
-  background-color: #1f2937;
-  display: flex;
-  justify-content: space-between;
-  margin: 0 10% 0 10%;
-}
-
 .nav-container {
   background-color: #1f2937;
   display: flex;
   justify-content: space-between;
-  margin: 0 10% 55px 10%;
-  padding-top: 12px;
+  padding: 1.75rem 5rem;
+}
+.nav-item {
+  display: flex;
+  justify-content: space-evenly;
 }
 
 .nav-link {
   text-decoration: none;
   color: white;
+  padding: 0.2rem;
 }
 
 .nav-link:hover {
   color: greenyellow;
+}
+
+.hero-container {
+  padding: 5rem;
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
 }
 
 .hero {
@@ -50,9 +61,6 @@ Colors:
 }
 
 .img-hero {
-  width: 200px;
-  height: 250px;
-  align-self: flex-start;
 }
 
 .info-title {
@@ -63,6 +71,10 @@ Colors:
   display: flex;
   margin: 0 10% 0 10%;
   justify-content: space-between;
+}
+
+.item {
+  padding: 0.25rem;
 }
 
 .quote-container {
@@ -78,4 +90,16 @@ Colors:
   font-size: 150px;
   margin: auto;
   text-align: center;
+}
+
+@media (max-width: 500px) {
+  .nav-item {
+    /* text-align: center; */
+    flex-direction: column;
+    align-self: flex-end;
+  }
+
+  /* .nav-container {
+    flex-wrap: wrap;
+  } */
 }
