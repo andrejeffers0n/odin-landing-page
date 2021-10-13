@@ -71,19 +71,23 @@ img {
   margin: 1rem 1rem 2rem 1rem;
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  padding-top: 5rem;
 }
 
 .header-heading {
-  font-size: 2.75rem;
+  font-size: 6.2rem;
   font-weight: 700;
   line-height: 1.1;
+  font-family: cursive;
+  /* display: flex; */
 }
 
 .sign-up {
   border: 1px solid rgba(100, 43, 97, 1);
-  border-radius: 15% / 40%;
+  border-radius: 15% / 45%;
   padding: 0.15rem 0.35rem;
-  font-size: 0.85rem;
+  font-size: 1.45rem;
   background-color: rgb(255, 255, 255);
   transition-duration: 0.27s;
   align-self: flex-start;
@@ -103,7 +107,7 @@ img {
 
 .img-hero {
   max-width: 20vw;
-  max-height: 45vh;
+  max-height: 50vh;
 }
 
 .alien-caption {
@@ -111,12 +115,13 @@ img {
 }
 
 .info-box {
+  margin-bottom: 3rem;
 }
 
 .info-title {
   text-align: center;
   margin: 0.75rem auto;
-  font-size: 1.78rem;
+  font-size: 2.78rem;
 }
 
 .item-box {
@@ -136,17 +141,61 @@ img {
   background-image: linear-gradient(to right, rgb(5, 5, 5), rgb(17, 233, 28));
   color: ivory;
   text-align: center;
+  padding: 5rem 0 5rem 0;
+  margin: 0 0.1rem;
 }
 
 .quote {
-  font-size: 2rem;
+  font-size: 2.6rem;
+  font-style: italic;
+  padding: 0 2rem;
+}
+
+.gradient-text {
+  background-image: linear-gradient(
+    65deg,
+    rgb(255, 255, 255) 50%,
+    rgb(0, 0, 0) 52.5%
+  );
+  background-clip: text;
+  color: transparent;
+}
+.quote-author {
+  font-size: 1.35rem;
 }
 
 .cta-box {
+  margin: 5rem;
+}
+
+.cta-left {
+  font-size: 1.8rem;
+}
+
+.cta-wrapper {
+  display: flex;
+  justify-content: space-around;
+  gap: 1.2rem;
+  align-items: center;
+  background-color: rgb(0, 0, 0);
+  color: ivory;
+  padding: 4rem;
+  border: 1px solid black;
+  border-radius: 15px;
+}
+.cta-sign-up {
+  font-size: 1.6rem;
+  align-self: center;
 }
 
 .footer {
-  margin: auto;
+  background-color: rgb(18, 187, 26);
+  display: flex;
+  justify-content: center;
+}
+
+.footer-box {
+  padding: 1.4rem 0 1.4rem 0;
 }
 
 @media (max-width: 500px) {
