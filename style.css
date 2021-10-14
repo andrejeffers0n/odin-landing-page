@@ -62,7 +62,7 @@ img {
 .hero-box {
   display: flex;
   justify-content: space-between;
-  gap: 2.5rem;
+  /* gap: 2rem; */
   align-items: center;
 }
 
@@ -104,6 +104,7 @@ img {
 .img-hero {
   max-width: 20vw;
   max-height: 50vh;
+  min-width: none;
 }
 
 .alien-caption {
